@@ -1,0 +1,25 @@
+{
+  "name": "RemoteWorkRocks",
+  "version": "1.0.0",
+  "description": "A growing Elm App",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "elm-app build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/falonofthetower/remote-rocks.git"
+  },
+  "author": "Peter Karth",
+  "bugs": {
+    "url": "https://github.com/falonofthetower/remote-rocks/issues"
+  },
+  "homepage": "https://github.com/falonofthetower/remote-rocks#readme",
+  "devDependencies": {
+    "create-elm-app": "^2.2.3"
+  }
+}
+
