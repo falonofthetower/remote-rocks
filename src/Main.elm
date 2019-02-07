@@ -162,7 +162,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ div [ class "view" ]
-            [ img [ src "/porch.jpg" ] []
+            [ img [ src "https://s3.amazonaws.com/wicked-brew/remote-work-rocks/porch.jpg" ] []
             , h1 [] [ text "Why Remote?" ]
             , showReason model.currentReason
             , button [ class "button", onClick NewReason ] [ text "Tell me More" ]
