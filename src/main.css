@@ -3,10 +3,13 @@ body {
   margin: 0;
   text-align: center;
   color: #293c4b;
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
   font-size: 30px;
+  margin: 40px 70px;
 }
 
 button {
@@ -33,9 +36,35 @@ button.active {
 
 img {
   margin: 20px 0;
-  max-width: 600px;
 }
 
-.view {
-  margin: 0 250px;
+@media (max-width: 599px) {
+  img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 600px) {
+  img {
+    max-width: 300px;
+  }
+}
+@media (min-width: 900px) {
+  img {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  img {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1800px) {
+  img {
+    max-width: 900px;
+  }
+}
+
+.footer {
+  padding-top: 80px;
 }

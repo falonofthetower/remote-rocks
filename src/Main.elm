@@ -2,7 +2,7 @@ module Main exposing (Model, Msg(..), init, main, update, view)
 
 import Array
 import Browser
-import Html exposing (Html, a, button, div, h1, img, text)
+import Html exposing (Html, a, br, button, div, h1, img, text)
 import Html.Attributes exposing (class, href, src, style)
 import Html.Events exposing (onClick)
 import Random
@@ -160,17 +160,16 @@ showReason reason =
 
 view : Model -> Html Msg
 view model =
-    div [ class "view" ]
-        [ img [ src "/porch.jpg" ] []
-        , h1 [] [ text "Why Remote?" ]
-        , button [ class "button", onClick NewReason ] [ text "Tell me More" ]
-        , showReason model.currentReason
-        , a
-            [ class "footnote"
-            , href
-                "https://life.taxjar.com/remote-work-love/"
+    div []
+        [ div [ class "view" ]
+            [ img [ src "/porch.jpg" ] []
+            , h1 [] [ text "Why Remote?" ]
+            , showReason model.currentReason
+            , button [ class "button", onClick NewReason ] [ text "Tell me More" ]
             ]
-            [ text "Reasons adapted from TaxJar.com" ]
+        , div [ class "footer" ]
+            [ a [ class "footer", href "https://life.taxjar.com/remote-work-love/" ] [ text "Reasons adapted from TaxJar.com" ]
+            ]
         ]
 
 
